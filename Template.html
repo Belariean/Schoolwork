@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Lethbridge college campus media</title>
+<meta charset="utf-8">
+	<link href="Template.css" rel="stylesheet">
+	<link href="bootstrap-4.4.1.css" rel="stylesheet">
+	<link href="footer.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+<!-- login -->
+		<div class="login" align="right">
+			<form action="" method="post" class="ttip">
+			  <input type="text" name="User" placeholder="logged in User"><button class=""><a href="">login/register</a></button>
+			</form>
+    </div>
+  </header>
+	
+<center> <!--Start of Main Nav Bar -->	 
+  <div><image class="logo" src="resources\LethCampusMedia.jpg"></image>
+	  <div class="navbar">
+      <div id="MainNav"> 
+        <form action="search.php" method="POST" >
+			  <a href="#lcm">LCM</a>
+        <a href="#news">News</a> 
+			  <a href="#entertainment">Entertenment</a>
+			  <a href="#life">Life</a>
+			  <a href="#sports">Sports</a>
+			  <a href="#" id="Endeavor">Endeavour</a>
+        <a href="#" id="Kodiak">Kodiak</a>
+			  <a href="#contactus">Contact Us</a>  
+			  <a class="openbtn"><span style="font-size:18px;cursor:pointer" onclick="openNav()">&#9776;</span></a>
+          <input type="text" placeholder="Search.." name="search" required>
+            <button type="submit">&#128269;</button>
+        </form> 
+      </div>
+    </div>	
+  </div>	
+<!--End of Main Nav Bar-->
+</center>
+<!-- full menu -->
+  <div id="FullNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="#">Home</a>
+      <div class="dropdown">
+      <a href="#">Watch/Read/Listen</a>
+        <div class="dropdown-content">
+          <a href="#">eNews</a>
+          <a href="#">News</a>
+         <a href="#" id="Endeavor">Endeavor</a>
+         <a href="#" id="Kodiak">Kodiak</a>
+        </div>
+      </div> 
+     <a href="#">Entertanment</a>
+      <a href="#">Life</a>
+      <a href="#">Sports</a>
+      <!--<a href="">eNews</a>-->
+      <a href="#">Announcers and Writers</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Login/register</a>
+      <a href="#">Settings</a>
+    </div>
+</div>
+<br>
+
+<!-- 75% -->
+<div class="column besidefullmenu">
+
+</div>
+
+<!-- right side content bar --> 
+<div class="column rightside">
+<button class="tip" ><img src="resources\NewTip.webp" href="AboutUs.html" alt="Contact us about a tip"></button></br>
+<table class="">
+<th><a href="">content</a></th>
+</table>
+<table class="">
+<th><a href="">content</a></th>
+</table>
+<table class="">
+<th><a href="">content</a></th>
+</table>
+<table class="">
+<th><a href="">content</a></th>
+</table>
+</div>
+
+<!-- 50/50% -->
+<div class="row">
+<div class="column fullleftside">
+
+</div>
+
+<div class="column fullrightside">
+
+</div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+<script>
+  function openNav() {
+    document.getElementById("FullNav").style.height = "100%";
+  }
+  
+  function closeNav() {
+    document.getElementById("FullNav").style.height = "0%";
+  }
+  </script>
+  <script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("MainNav");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    </script>
+</body>
+
+ <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify"> The site of<i> LETHBRIDGE CAMPUS MEDIA </i> A news source for all to see. It contains the eNews, The Endeavour and the Kodiak Radio Station</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="http://www.lethbridgecampusmedia.ca">News</a></li>
+              <li><a href="http://www.lethbridgecampusmedia.ca">Sports</a></li>
+              <li><a href="http://www.lethbridgecampusmedia.ca">Politics</a></li>
+              <li><a href="http://www.lethbridgecampusmedia.ca">Entertainment</a></li>
+              <li><a href="http://www.lethbridgecampusmedia.ca">Sports II</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="http://www.lethbridgecampusmedia.ca">About Digital Communications & Media</a></li>
+              <li><a href="http://www.lethbridgecampusmedia.ca">About eNews</a></li>
+              <li><a href="http://www.lethbridgecampusmedia.ca">About the Endeavour</a></li>
+              <li><a href="http://www.lethbridgecampusmedia.ca">About the Kodiak</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by 
+         <a href="#">Y3S Group</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>  
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>
+
+</html>

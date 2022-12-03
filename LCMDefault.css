@@ -1,0 +1,432 @@
+/**********************************
+*  FILE: General Template CSS     *
+*  				                        *
+*  AUTHOR: DYLAN PFLEGER          *
+*	 Secondary Author: Pat Bauhuis  * 
+*                                 *	                  
+*  GROUP:  Y3S Group		          *
+*  DATE:   2022-02-18             *
+***********************************/
+th, td{ 
+  border:1px solid black;
+  width: 300px;
+  height: 100px;}
+.tip {
+  background-color: #ffffff;
+  width: 300px;
+  height: 120px;
+}
+.footer {
+  background-color: #Ffffff;
+  padding: 10px;}
+  
+/* Slide show for main page feed */
+* {box-sizing:border-box}
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: left;
+  padding: 50px}
+.mySlides1 {
+  display: none;}
+.mySlides2 {
+  display: none;}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 8px 8px 0;
+  user-select: none;}
+.next {
+  right: 0;
+  border-radius: 4px 0 0 4px;}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;}
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}} 
+  
+/*----Main Navbar styling start----*/
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.logo {
+  vertical-align:center;
+  width: 500px;
+  height: 100px;
+  margin-right: 20px;
+  margin-top: 15px; }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-right: 20px;
+  z-index: 1;
+  left: 50%;
+  transform: translate(-50%);}
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;}
+
+/*----Main Navbar styling----*/
+.navbar {
+  width: 60%;
+  height: 50px;
+  background-color: #ffffff;}
+.navbar a { /*navbar ancor */
+  color:#171717;
+  text-align:left;
+  width: 10%;
+  font-size: 18px;
+  text-decoration: none;
+  padding:4px;
+  border-right:1px groove black;
+  border-left:1px groove black;
+  transition: all 0.5s;
+  cursor: pointer;}
+.navbar #Kodiak{ /*navbar kodiak */
+  color:#171717;
+  text-align:left;
+  width: 10%;
+  font-size: 18px;
+  padding:4px;
+  border-right:1px groove black;
+  border-left:1px groove black;
+  text-decoration: none;
+  transition: all 0.5s;
+  cursor: pointer;}
+.navbar #Endeavor{ /*navbar kodiak */
+  color:#171717;
+  text-align:left;
+  width: 10%;
+  font-size: 18px;
+  padding:4px;
+  border-right:1px groove black;
+  border-left:1px groove black;
+  text-decoration: none;
+  transition: all 0.5s;
+  cursor: pointer;}
+.navbar a:hover {
+  background-color: #6b7b8f;}
+.navbar input {
+  height: 40px;}
+.navbar button {
+  height: 40px;
+  background-color: #879AB2;
+  border: black;
+  transition: all 0.5s;}
+.navbar #Kodiak:hover{
+  background-color: #e98f23;}
+.navbar #Endeavor:hover{
+  background-color: #a3447c;}
+/*----End of Main Navbar----*/
+/*----End of Main Navbar styling----*/
+
+
+  /*----Start of Full Menu----*/
+.sidebar {
+  height: 100%; 
+  width: 350px; 
+  position: fixed; 
+  z-index: 2; 
+  top: 0;
+  left: 0;
+  background-color: #D3D3D3; 
+  overflow-x: hidden; 
+  padding-top: 60px;
+  transition: 0.5s; } 
+.sidebar a{/* The sidebar links */
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;}
+.sidebar a:hover, .dropdown:hover {
+  color: #f1f1f1;}
+.dropdown {
+  display: inline-block;}
+.dropdown-content{ 
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;}
+.dropdown-content a {/* Details of menu items */
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;}
+.dropdown-content a:hover {
+  background-color: #f1f1f1}
+.dropdown:hover .dropdown-content{/* When you mouse over the navigation links, show details */
+  display:block;}
+.sidebar .closebtn {/* Position and style the close button (top right corner) */
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;}
+.openbtn {/* The button used to open the sidebar */
+  font-size: 18px;
+  cursor: pointer;
+  color: Black;
+  text-align: left;
+  transition: all 0.5s;
+  border: Black;}
+.openbtn:hover {
+  background-color: #444;}
+  /*---End of Full Navigation Menu---*/
+
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; 
+  padding: 20px;}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}}
+.column {/* Create three unequal columns that floats next to each other */
+  float: left;
+  padding: 10px;}
+.column.leftside {/* Left column */
+  width: 50%;}
+.column.middle {/* Middle column */
+  width: 25%;}
+.column.rightside {/* Right column */
+  width: 25%;}
+.column.fullrightside {/* 50/50 columns*/
+ width: 50%;}
+ .column.fullleftside {
+ width: 50%;}
+.column.besidefullmenu {/* 75% */
+width: 75%;}	
+.row:after {/* Clear floats after the columns */
+  content: "";
+  display: table;
+  clear: both;}
+  
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+  width: 100%;}
+  
+  /*--Search bar (start)--*/
+* {
+	border: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 5px;}
+.search-bar input,
+.search-btn, 
+.search-btn:before, 
+.search-btn:after {
+	transition: all 0.25s ease-out;}
+.search-bar input,
+.search-btn {
+	width: 3em;
+	height: 3em;}
+.search-bar input:invalid:not(:focus),
+.search-btn {
+	cursor: pointer;}
+.search-bar,
+.search-bar input:focus,
+.search-bar input:valid  {
+	width: 100%;}
+.search-bar input:focus,
+.search-bar input:not(:focus) + .search-btn:focus {
+	outline: transparent;}
+.search-bar {
+	margin-left: 15px;
+	justify-content: center;
+	max-width: 30em;}
+.search-bar input {
+	background: transparent;
+	border-radius: 1.5em;
+	box-shadow: 0 0 0 0.4em #171717 inset;
+	padding: 0.75em;
+	transform: translate(0.5em,0.5em) scale(0.5);
+	transform-origin: 100% 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;}
+.search-bar input::-webkit-search-decoration {
+	-webkit-appearance: none;}
+.search-bar input:focus,
+.search-bar input:valid {
+	background: #fff;
+	border-radius: 0.375em 0 0 0.375em;
+	box-shadow: 0 0 0 0.1em #d9d9d9 inset;
+	transform: scale(1);}
+.search-btn {
+	background: #171717;
+	border-radius: 0 0.75em 0.75em 0 / 0 1.5em 1.5em 0;
+	padding: 0.75em;
+	position: relative;
+	transform: translate(0.25em,0.25em) rotate(45deg) scale(0.25,0.125);
+	transform-origin: 0 50%;}
+.search-btn:before, 
+.search-btn:after {
+	content: "";
+	display: block;
+	opacity: 0;
+	position: absolute;}
+.search-btn:before {
+	border-radius: 50%;
+	box-shadow: 0 0 0 0.2em #f1f1f1 inset;
+	top: 0.75em;
+	left: 0.75em;
+	width: 1.2em;
+	height: 1em;}
+.search-btn:after {
+	background: #f1f1f1;
+	border-radius: 0 0.25em 0.25em 0;
+	top: 51%;
+	left: 51%;
+	width: 0.75em;
+	height: 0.25em;
+	transform: translate(0.2em,0) rotate(45deg);
+	transform-origin: 0 50%;}
+.search-btn span {
+	display: inline-block;
+	overflow: hidden;
+	width: 1px;
+	height: 1px;}
+
+/* Active state */
+.search-bar input:focus + .search-btn,
+.search-bar input:valid + .search-btn {
+	background: #2762f3;
+	border-radius: 0 0.375em 0.375em 0;
+	transform: scale(1);}
+.search-bar input:focus + .search-btn:before, 
+.search-bar input:focus + .search-btn:after,
+.search-bar input:valid + .search-btn:before, 
+.search-bar input:valid + .search-btn:after {
+	opacity: 1;}
+.search-bar input:focus + .search-btn:hover,
+.search-bar input:valid + .search-btn:hover,
+.search-bar input:valid:not(:focus) + .search-btn:focus {
+	background: #0c48db;}
+.search-bar input:focus + .search-btn:active,
+.search-bar input:valid + .search-btn:active {
+	transform: translateY(1px);}
+
+/*-----Tool Tip Highlights and On Hover Styling---- */
+.ttip {/* ToolTip root */
+	position:relative;
+	display:inline-block;	}
+/* Tip Text */
+.ttip #Default{ /* General Items */
+	visibility:hidden;
+	width:120px;
+	background-color: #555;
+	color:#fff;
+	text-align:center;
+	padding:5px 0;
+	border-radius:6px;
+/* Text Position */
+  position: absolute;
+  z-index:1;
+/* Fade in tooltip */
+  opacity:0;
+  transition: 0.3s;}
+.ttip #LCM { /* LCM-eNews/associated items */
+	visibility:hidden;
+	width:120px;
+	background-color: #7690a7;
+	color:#fff;
+	text-align:center;
+	padding:5px 0;
+	border-radius:6px;
+/* Text Position */
+	position: absolute;
+	z-index:1;	
+/* Fade in tooltip*/
+	opacity:0;
+	transition: 0.3s;}
+.ttip #Endeavor { /* Endeavor/associated items */
+	visibility:hidden;
+	width:120px;
+	background-color: #a3447c;
+	color:#fff;
+	text-align:center;
+	padding:5px 0;
+	border-radius:6px;
+/* Text Position */
+	position: absolute;
+	z-index:1;
+/* Fade in tooltip */
+	opacity:0;
+	transition: 0.3s;}
+.ttip #Kodiak { /* Kodiak/associated items */
+	visibility:hidden;
+	width:120px;
+	background-color: #e98f23;
+	color:#fff;
+	text-align:center;
+	padding:5px 0;
+	border-radius:6px;
+/* Text Position */
+	position: absolute;
+	z-index:1;	
+/* Fade in tooltip */
+	opacity:0;
+	transition: 0.3s;}
+.ttip:hover #Default {/* Show the tooltip on mouseover */
+	visibility: visible;
+	opacity:1;}
+.ttip:hover #LCM {/* Show the tooltip on mouseover */
+	visibility: visible;
+	opacity:1;}
+.ttip:hover #Endev {/* Show the tooltip on mouseover */
+	visibility: visible;
+	opacity:1;}
+.ttip:hover #Kodiak {/* Show the tooltip on mouseover */
+	visibility: visible;
+	opacity:1;}
+/* Tooltip for images based on description when upload */
+
+
+
+
+
+
+
+
+
+
+
+/* Tooltip for videos based on description when upload*/
+}
+/*----End of Tool Tips----*/

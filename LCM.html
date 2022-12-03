@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Lethbridge college campus media</title>
+<meta charset="utf-8">
+	<link href="LCMDefault.css" rel="stylesheet">
+	<link href="bootstrap-4.4.1.css" rel="stylesheet">
+	<link href="footer.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+<!-- login -->
+		<div class="login" align="right">
+			<form action="" method="post" class="ttip">
+			<input type="text" name="User" placeholder="logged in User"><button class=""><a href="">login/register</a></button>
+			</form>
+		</div>	
+
+    <!--<div class="header"><img src="resources\LethCampusMedia.jpg" width=500px height=100px></img></div>-->
+<!-- nav bar -->		
+	<center>	
+		<div class="navbar">
+      <div class="sticky">
+        <image class="logo" src="resources\LethCampusMedia.jpg"></image>
+      <form action="search.php" method="POST">
+			<a href="#lcm">LCM</a>
+      <a href="#news">News</a> 
+			<a href="#entertainment">Entertenment</a>
+			<a href="#life">Life</a>
+			<a href="#sports">Sports</a>
+			<!--<a href="#eNews">eNews</a>-->
+			<a href="#" id="Endeavor">Endeavour</a>
+      <a href="#" id="Kodiak">Kodiak</a>
+			<a href="#contactus">Contact Us</a>
+			<a class="openbtn" onclick="openNav()">&#9776;</a>
+      <input type="text" placeholder="Search.." name="search" required>
+      <button type="submit">&#128269;</button> 
+      </form>
+      <!-- old search code (just for reference)
+			  <form action="search.php" method="POST" class="search-bar" style="display: flex;">
+			    <input type="search" name="search" pattern=".*\S.*" required>
+			      <button class="search-btn" type="submit">
+			        <span>Search</span>
+			      </button>
+        </form>
+      -->
+		</div>
+  </div>
+	</center>
+	</header>
+<!-- full menu -->
+<div onclick="closeNav()">
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="">Home</a>
+  <a href=""class="dropdown">Watch/Read/Listen</a>
+  <div class="dropdown-content">
+      <a href="#">eNews</a>
+      <a href="#">News</a>
+      <a href="#">Endeavor</a>
+      <a href="#">Kodiak</a>
+    </div>
+  <a href="">Entertanment</a>
+  <a href="">Life</a>
+  <a href="">Sports</a>
+  <!--<a href="">eNews</a>-->
+  <a href="">Announcers and Writers</a>
+  <a href="">Contact Us</a>
+  <a href="">Login/register</a>
+  <a href="">Settings</a>
+</div>
+
+<br>
+
+<!-- 75% -->
+</div>
+<div class="column besidefullmenu">
+</div>
+<!-- right side content bar -->
+ 
+<div class="column rightside">
+<button class="tip" ><img src="resources\NewTip.webp" href="AboutUs.html" alt="Contact us about a tip"></button></br>
+<table class="">
+<th><a href="">content</a></th>
+</table>
+<table class="">
+<th><a href="">content</a></th>
+</table>
+<table class="">
+<th><a href="">content</a></th>
+</table>
+<table class="">
+<th><a href="">content</a></th>
+</table>
+</div>
+<!-- 50/50% -->
+<div class="row">
+<div class="column fullleftside">
+
+</div>
+
+<div class="column fullrightside">
+
+</div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+
+
+<script>
+  // full menu
+  // Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+function openNav() {
+  document.getElementById("mySidebar").style.width = "25%";
+  document.getElementById("main").style.marginRight = "25%";}
+
+// Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginRight = "0";}
+
+  //Basically just a clone of openNav will be implemented to open the search bar
+  //function openSeach() {
+  //  document.getElementById("mySidebar").style.width = "25%";
+  //  document.getElementById("main").style.marginRight = "25%";}
+
+  
+
+
+</script>
+<script>
+  //Sticky navbar script
+  window.onscroll = function(){Stickynav()};
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  function Stickynav() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+} 
+</script>
+</body>
+
+ <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify"> The site of<i> LETHBRIDGE CAMPUS MEDIA </i> A news source for all to see. It contains the eNews, The Endeavour and the Kodiak Radio Station</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="http://www.lethbridgecampusmedia.ca">News</a></li>
+              <li><a href="http://www.lethbridgecampusmedia.ca">Sports</a></li>
+              <li><a href="http://www.lethbridgecampusmedia.ca">Politics</a></li>
+              <li><a href="http://www.lethbridgecampusmedia.ca">Entertainment</a></li>
+              <li><a href="http://www.lethbridgecampusmedia.ca">Sports II</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="http://www.lethbridgecampusmedia.ca">About Digital Communications & Media</a></li>
+              <li><a href="http://www.lethbridgecampusmedia.ca">About eNews</a></li>
+              <li><a href="http://www.lethbridgecampusmedia.ca">About the Endeavour</a></li>
+              <li><a href="http://www.lethbridgecampusmedia.ca">About the Kodiak</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by 
+         <a href="#">Y3S Group</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>  
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>
+
+</html>
